@@ -1,0 +1,47 @@
+.myclass {
+  color: #FF8000;
+}
+.myclass1 {
+  color: #5882FA;
+}
+.myclass {
+  font-size: 20px;
+}
+#header {
+  background-color: #4455EE;
+}
+#footer {
+  color: #4455EE;
+}
+h3 {
+  color: #4455EE;
+}
+.rounded-corners {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#login-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#header {
+  margin-top: 35px;
+}
+h2 {
+  font-style: italic;
+}
+.style,
+h2 {
+  background: green;
+}
+div {
+  width: 25px;
+  width: 50px;
+  width: 75px;
+  width: 100px;
+  width: 125px;
+  width: 150px;
+  width: 175px;
+}

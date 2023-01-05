@@ -1,0 +1,50 @@
+@import "http://www.tutorialspoint.com/less/myfile.less";
+@brand-color: #4455EE;
+@fontSize: 10px;
+.myclass {
+   font-size: @fontSize * 2;
+}
+
+a {
+  &:hover {}
+  &:active {}
+  &:visited {}
+}
+
+#header { background-color: @brand-color; }
+#footer { color: @brand-color; }
+h3 { color: @brand-color; }
+.rounded-corners {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#login-box {
+  .rounded-corners;
+}
+.rounded-corners(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+@base-margin: 25px;
+#header { margin-top: @base-margin + 10px; }
+
+h2 {
+   &:extend(.style);
+   font-style: italic;
+}
+
+.style {
+   background: green;
+}
+
+.cont(@count) when (@count > 0) {
+   .cont((@count - 1));
+   width: (25px * @count);
+}
+
+div {
+   .cont(7);
+}
